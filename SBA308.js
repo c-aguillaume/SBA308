@@ -14,7 +14,7 @@ Objectives:
 3. Outputs a consistent result as described by a specification.
 */ 
 
-// create Create a function named getLearnerData() that accepts these values as parameters, in the order listed: (CourseInfo, AssignmentGroup, [LearnerSubmission]), and returns the formatted result, which should be an array of objects as described above.
+//Create a function named getLearnerData() that accepts these values as parameters, in the order listed: (CourseInfo, AssignmentGroup, [LearnerSubmission]), and returns the formatted result, which should be an array of objects as described above.
 
 
 
@@ -98,25 +98,36 @@ const CourseInfo = {
 
 
 
-// let result = []               //declaring an empty array for results
-
-
-
-
-
-//name of array then .array.forEach(element 
 
 let gradeOneResult = function (score, points_possible){ //function to get the result for Grade One
   return score / points_possible
 }
 
-let gradeTwoResult = function (score, points_possible) {
+let gradeTwoResult = function (score, points_possible) { //function to get the result for Grand Two
   return score / points_possible
 }
 
 let classScoreAverage = function (gradeOneResult, gradeTwoResult) {
   return gradeOneResult / gradeTwoResult
 }
+
+//Pull Learner submissions make a copy of it and turn them into an array. Use spread operator
+let LearnerSubmissionCopy = [...LearnerSubmissions];
+
+//Pull all Learner ID 125 Assignments into an array
+let learnerOneAssignments = []
+
+//Use loop iteration to find every assignment Learner 125 turned in.
+for(let a = 0; a < LearnerSubmissionCopy.length; a++){
+  if(LearnerSubmissionCopy[a].learner_id === 125){
+    learnerOneAssignments.push(LearnerSubmissionCopy[a]);
+  }
+}
+
+  console.log(learnerOneAssignments)
+
+
+
 
 let learnerObject = {       //template object for each of the students
   id: null,
@@ -134,7 +145,7 @@ console.log(finalGrade)
 */
 
 let finalGrade = LearnerSubmissions[0].submission.score //thhis is how you pull specific data from an array
-console.log(finalGrade)
+// console.log(finalGrade)
 
   // Get the key value pair "ID"  and "ID number" from Learner Submissions. What is needed to do so?
   // Get the key value pair 
