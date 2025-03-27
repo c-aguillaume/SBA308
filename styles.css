@@ -1,0 +1,104 @@
+
+
+#main_container {
+    width: 800px;
+    height: 1000px;
+    border: 2px solid #1b263b;
+    background-color: #415a77;
+    margin: 250px;
+    color: #e0e1dd;
+    box-shadow: 10px 5px 5px #1b263b;
+}
+
+
+#section_one {
+    /* border: 2px solid blue; */
+    width: auto;
+    height: 315px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+#box_one {
+    display: flex;
+    padding: 10px;
+
+}
+
+
+#name_combo {
+    display: flex;
+}
+
+#box_two {
+    margin-left: auto;
+    padding: 20px;
+}
+
+#section_two {
+    /* border: 2px solid purple; */
+    height: 700px;
+    width: 500px;
+    padding-left: 10px;
+}   
+
+#box_three {
+/* border: 2px solid green; */
+height: 30px;
+padding-right: 50px;
+}
+
+.contact_list {
+    list-style-type: none;
+}   
+
+span {
+    float: right;
+}
+
+
+#box_seven {
+    margin-top: 40px;
+}
+
+#title, #text {
+    margin-left: auto;
+}
+
+#text {
+    padding-top: 10px;
+}
+
+.box_six, .box_eight, .box_nine {
+    padding-top: 15px;
+}
+
+#section_combo {
+    display: flex;
+}
+
+#section_three {
+    padding-left: 40px;
+}
+
+li::marker {
+    color:red;
+}
+
+
+ul {
+    list-style-type: square;
+}
+
+h3 {
+    color: #e0e1dd;
+    border-style: solid;
+    border-color: red;
+}
+
+#title {
+    font-style: italic;
+}
